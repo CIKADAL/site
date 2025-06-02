@@ -1,241 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="fr-CA" class="theme light classic">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADILY FLAVOR - Premium Recipes</title>
-    <style data-styled="true" data-styled-version="5.3.10">
-        /* Base Margins */
-        .iUEiRd { margin: 0; }
-        .iwCByY { margin: 0 0 0.5rem; margin-top: 2rem; }
-        .kFFOFc { margin: 0; margin-top: 2rem; }
-        .dxqEAa { 
-            margin: 0; 
-            text-align: center;
-            font-family: SourceSerif, helvetica, sans-serif;
-            font-size: 42px;
-            font-weight: 700;
-            color: #333;
-            padding: 2rem 0;
-            border-bottom: 1px solid #eee;
-        }
-        .jfKMyp { margin: 0; margin-top: 3rem; }
-
-        /* Typography - Core Styles */
-        .iRrTHf, .bjMGUM {
-            --type-token: consumptionEditorial.body-core;
-            text-transform: none;
-            font-family: STIXTwoText, helvetica, sans-serif;
-            font-feature-settings: normal;
-            font-style: normal;
-            letter-spacing: 0.00588em;
-            line-break: auto;
-            line-height: 1.69em;
-            font-size: 17px;
-            font-weight: 400;
-            overflow-wrap: normal;
-        }
-        .iRrTHf { color: rgba(201,201,201,1); }
-        .bjMGUM { 
-            color: rgba(51,51,51,1);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .iRrTHf a, .bjMGUM a { color: inherit; }
-
-        /* Headline Styles */
-        .ZXQYA {
-            --type-token: consumptionEditorial.hed-standard;
-            text-transform: none;
-            font-family: SourceSerif, helvetica, sans-serif;
-            font-feature-settings: normal;
-            font-style: normal;
-            letter-spacing: normal;
-            line-break: auto;
-            line-height: 1.13em;
-            font-size: 32px;
-            font-weight: 700;
-            overflow-wrap: normal;
-            color: rgba(51,51,51,1);
-            margin: 2rem 0 1rem;
-        }
-        @media (min-width: 768px) {
-            .ZXQYA {
-                font-size: 38.4px;
-                line-height: 1.1299em;
-            }
-        }
-        @media (min-width: 1024px) {
-            .ZXQYA {
-                font-size: 41.6px;
-                line-height: 1.13005em;
-            }
-        }
-        .ZXQYA a { color: inherit; }
-
-        /* Recipe Card Styles */
-        .recipe-card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .recipe-title {
-            font-family: SourceSerif, serif;
-            font-size: 2.2rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .recipe-meta {
-            font-family: Renner, sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            font-size: 0.8rem;
-            color: #777;
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 1rem;
-        }
-
-        .recipe-section-title {
-            font-family: SourceSerif, serif;
-            font-size: 1.5rem;
-            color: #333;
-            margin: 1.5rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .ingredient-list, .instruction-list {
-            margin-left: 1.5rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .ingredient-list li {
-            margin-bottom: 0.5rem;
-        }
-
-        .instruction-list li {
-            margin-bottom: 1rem;
-        }
-
-        .recipe-image {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Navigation */
-        .nav-container {
-            display: flex;
-            justify-content: center;
-            padding: 1rem 0;
-            background: #f9f9f9;
-            border-bottom: 1px solid #eee;
-        }
-
-        .nav-link {
-            font-family: Renner, sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            font-size: 0.9rem;
-            color: #555;
-            margin: 0 1rem;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .nav-link:hover {
-            color: #333;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-            background: #f9f9f9;
-            border-top: 1px solid #eee;
-            font-family: STIXTwoText, serif;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        /* Grouped selectors */
-        data-styled.g1[id="BaseWrap-sc-gjQpdd"] {
-            content: "iUEiRd,iwCByY,kFFOFc,dxqEAa,jfKMyp,"
-        }
-    </style>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>ADILY FLAVOR - Delicious Recipes for Every Taste</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="_assets/a0684b0780c739e9.vendor.ltr.css" rel="stylesheet">
+  <link href="_assets/bc12dbc311168fdc.ltr.css" rel="stylesheet">
+  <link href="_assets/static_font_4.ltr.css" rel="stylesheet">
+  <style>
+    /* Custom Recipe Styling (keeps original Canva theme) */
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .recipe-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .recipe-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .recipe-card h3 {
+      padding: 10px 15px;
+      margin: 0;
+      color: #304254;
+    }
+    .recipe-description {
+      padding: 0 15px 10px;
+      color: #666;
+    }
+    .recipe-details {
+      padding: 0 15px 15px;
+      display: flex;
+      gap: 10px;
+    }
+    .view-recipe-btn {
+      display: block;
+      text-align: center;
+      background: #ff6b6b;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 4px;
+      margin: 0 15px 15px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="dxqEAa">
-            <h1>ADILY FLAVOR</h1>
-        </div>
-        <div class="nav-container">
-            <a href="#" class="nav-link">Recipes</a>
-            <a href="#" class="nav-link">Ingredients</a>
-            <a href="#" class="nav-link">Techniques</a>
-            <a href="#" class="nav-link">About</a>
-        </div>
+  <div id="root">
+    <!-- Header (Same as original Canva design) -->
+    <header style="background: #ffffff; padding: 20px; text-align: center;">
+      <h1 style="color: #304254;">ADILY FLAVOR</h1>
+      <p style="color: #666;">Delicious recipes for every taste</p>
     </header>
 
-    <main class="bjMGUM">
-        <h2 class="ZXQYA">Featured Recipe</h2>
-        
-        <!-- Caesar Salad Recipe -->
+    <!-- Featured Recipes Section -->
+    <section class="featured-recipes" style="padding: 20px;">
+      <h2 style="color: #304254; text-align: center;">Today’s Top Picks</h2>
+      <div class="recipe-grid">
+        <!-- Recipe 1 (Adapted from Simply Recipes) -->
         <div class="recipe-card">
-            <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Caesar Salad" class="recipe-image">
-            <h2 class="recipe-title">The Best Caesar Salad</h2>
-            <div class="recipe-meta">
-                <span>Prep: 20 mins</span>
-                <span>Total: 25 mins</span>
-                <span>Servings: 4</span>
-            </div>
-            
-            <h3 class="recipe-section-title">Ingredients</h3>
-            <ul class="ingredient-list">
-                <li>1 clove garlic, halved</li>
-                <li>2 anchovy fillets</li>
-                <li>1 egg yolk</li>
-                <li>2 tbsp (30 ml) lemon juice</li>
-                <li>1 tsp (5 ml) Dijon mustard</li>
-                <li>1/2 cup (125 ml) olive oil</li>
-                <li>1/4 cup (60 ml) grated Parmesan cheese</li>
-                <li>1 head romaine lettuce, torn into pieces</li>
-                <li>1 cup (250 ml) croutons</li>
-                <li>Additional Parmesan shavings for garnish</li>
-            </ul>
-            
-            <h3 class="recipe-section-title">Instructions</h3>
-            <ol class="instruction-list">
-                <li>In a wooden salad bowl, rub the inside with the garlic halves.</li>
-                <li>Add anchovies and mash them into a paste with a fork.</li>
-                <li>Whisk in egg yolk, lemon juice, and mustard until smooth.</li>
-                <li>Gradually whisk in olive oil until dressing emulsifies.</li>
-                <li>Stir in grated Parmesan and season with pepper.</li>
-                <li>Add lettuce and toss gently to coat with dressing.</li>
-                <li>Add croutons and toss again.</li>
-                <li>Garnish with Parmesan shavings and serve immediately.</li>
-            </ol>
-            
-            <h3 class="recipe-section-title">Chef's Notes</h3>
-            <p>For a more intense flavor, let the dressing sit for 30 minutes before using. The egg yolk will cook slightly from the acid in the lemon juice, but for complete food safety, use pasteurized eggs.</p>
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Avocado Toast" class="recipe-image">
+          <h3>Creamy Avocado Toast</h3>
+          <p class="recipe-description">A simple yet delicious breakfast with ripe avocado, chili flakes, and a drizzle of olive oil.</p>
+          <div class="recipe-details">
+            <span class="time">⏱ 10 mins</span>
+            <span class="difficulty">⭐ Easy</span>
+          </div>
+          <a href="#" class="view-recipe-btn">View Recipe</a>
         </div>
-        
-        <!-- Additional recipe cards can be added here -->
-    </main>
 
-    <footer class="footer">
-        <p>© 2023 ADILY FLAVOR. All rights reserved.</p>
-        <p>Premium recipes for discerning home chefs.</p>
-    </footer>
+        <!-- Recipe 2 (Adapted from Ricardo Cuisine) -->
+        <div class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Garlic Butter Shrimp" class="recipe-image">
+          <h3>Garlic Butter Shrimp Pasta</h3>
+          <p class="recipe-description">Succulent shrimp cooked in a rich garlic butter sauce, served over al dente pasta.</p>
+          <div class="recipe-details">
+            <span class="time">⏱ 25 mins</span>
+            <span class="difficulty">⭐⭐ Medium</span>
+          </div>
+          <a href="#" class="view-recipe-btn">View Recipe</a>
+        </div>
+
+        <!-- Recipe 3 (Adapted from Simply Recipes) -->
+        <div class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Chocolate Cake" class="recipe-image">
+          <h3>Decadent Chocolate Cake</h3>
+          <p class="recipe-description">A moist, rich chocolate cake with a silky ganache frosting—perfect for celebrations.</p>
+          <div class="recipe-details">
+            <span class="time">⏱ 60 mins</span>
+            <span class="difficulty">⭐⭐⭐ Advanced</span>
+          </div>
+          <a href="#" class="view-recipe-btn">View Recipe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" style="padding: 20px; text-align: center;">
+      <h2 style="color: #304254;">Browse by Category</h2>
+      <div style="display: flex; justify-content: center; gap: 15px;">
+        <a href="#" style="padding: 10px 20px; background: #f0f0f0; border-radius: 4px; text-decoration: none; color: #304254;">Breakfast</a>
+        <a href="#" style="padding: 10px 20px; background: #f0f0f0; border-radius: 4px; text-decoration: none; color: #304254;">Lunch</a>
+        <a href="#" style="padding: 10px 20px; background: #f0f0f0; border-radius: 4px; text-decoration: none; color: #304254;">Dinner</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer (Same as original Canva design) -->
+  <footer style="background: #f5f5f5; padding: 20px; text-align: center;">
+    <p style="color: #666;">© 2024 ADILY FLAVOR. All rights reserved.</p>
+  </footer>
 </body>
 </html>
