@@ -3,213 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADILY FLAVOR - Culinary Inspiration</title>
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'STIXTwoText', Georgia, serif;
+    <title>ADILY FLAVOR - Premium Recipes</title>
+    <style data-styled="true" data-styled-version="5.3.10">
+        /* Base Margins */
+        .iUEiRd { margin: 0; }
+        .iwCByY { margin: 0 0 0.5rem; margin-top: 2rem; }
+        .kFFOFc { margin: 0; margin-top: 2rem; }
+        .dxqEAa { 
+            margin: 0; 
+            text-align: center;
+            font-family: SourceSerif, helvetica, sans-serif;
+            font-size: 42px;
+            font-weight: 700;
             color: #333;
-            line-height: 1.6;
-            background-color: #f9f9f7;
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .jfKMyp { margin: 0; margin-top: 3rem; }
+
+        /* Typography - Core Styles */
+        .iRrTHf, .bjMGUM {
+            --type-token: consumptionEditorial.body-core;
+            text-transform: none;
+            font-family: STIXTwoText, helvetica, sans-serif;
+            font-feature-settings: normal;
+            font-style: normal;
+            letter-spacing: 0.00588em;
+            line-break: auto;
+            line-height: 1.69em;
+            font-size: 17px;
+            font-weight: 400;
+            overflow-wrap: normal;
+        }
+        .iRrTHf { color: rgba(201,201,201,1); }
+        .bjMGUM { 
+            color: rgba(51,51,51,1);
+            max-width: 800px;
+            margin: 0 auto;
             padding: 0 20px;
         }
-        
-        /* Header Styles */
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid #eaeaea;
-            margin-bottom: 2rem;
-        }
-        
-        .site-title {
-            font-family: 'SourceSerif', serif;
-            font-size: 3.5rem;
+        .iRrTHf a, .bjMGUM a { color: inherit; }
+
+        /* Headline Styles */
+        .ZXQYA {
+            --type-token: consumptionEditorial.hed-standard;
+            text-transform: none;
+            font-family: SourceSerif, helvetica, sans-serif;
+            font-feature-settings: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            line-break: auto;
+            line-height: 1.13em;
+            font-size: 32px;
             font-weight: 700;
-            color: #222;
-            letter-spacing: 0.03em;
-            margin-bottom: 1rem;
+            overflow-wrap: normal;
+            color: rgba(51,51,51,1);
+            margin: 2rem 0 1rem;
         }
-        
-        .site-tagline {
-            font-family: 'Renner', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.9rem;
-            color: #777;
+        @media (min-width: 768px) {
+            .ZXQYA {
+                font-size: 38.4px;
+                line-height: 1.1299em;
+            }
         }
-        
-        /* Main Content Styles */
-        .main-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 0;
+        @media (min-width: 1024px) {
+            .ZXQYA {
+                font-size: 41.6px;
+                line-height: 1.13005em;
+            }
         }
-        
-        .featured-section {
-            margin-bottom: 3rem;
-        }
-        
-        .section-title {
-            font-family: 'SourceSerif', serif;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #222;
-        }
-        
-        /* Article Cards */
-        .article-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .article-card {
+        .ZXQYA a { color: inherit; }
+
+        /* Recipe Card Styles */
+        .recipe-card {
             background: white;
             border-radius: 8px;
-            overflow: hidden;
+            padding: 2rem;
+            margin: 2rem 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
         }
-        
-        .article-card:hover {
-            transform: translateY(-5px);
+
+        .recipe-title {
+            font-family: SourceSerif, serif;
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 1rem;
         }
-        
-        .article-image {
-            height: 200px;
-            background-color: #f0f0f0;
-            background-size: cover;
-            background-position: center;
+
+        .recipe-meta {
+            font-family: Renner, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.8rem;
+            color: #777;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
         }
-        
-        .article-content {
-            padding: 1.5rem;
+
+        .recipe-section-title {
+            font-family: SourceSerif, serif;
+            font-size: 1.5rem;
+            color: #333;
+            margin: 1.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
         }
-        
-        .article-title {
-            font-family: 'SourceSerif', serif;
-            font-size: 1.4rem;
+
+        .ingredient-list, .instruction-list {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .ingredient-list li {
             margin-bottom: 0.5rem;
         }
-        
-        .article-excerpt {
-            color: #666;
+
+        .instruction-list li {
             margin-bottom: 1rem;
-            font-size: 0.95rem;
         }
-        
-        .article-meta {
-            font-family: 'Renner', sans-serif;
-            font-size: 0.8rem;
-            color: #999;
+
+        .recipe-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Navigation */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            background: #f9f9f9;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-link {
+            font-family: Renner, sans-serif;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        /* Footer Styles */
-        footer {
-            text-align: center;
-            padding: 3rem 0;
-            margin-top: 3rem;
-            border-top: 1px solid #eaeaea;
-            color: #777;
+            letter-spacing: 0.08em;
             font-size: 0.9rem;
+            color: #555;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.2s;
         }
-        
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .site-title {
-                font-size: 2.5rem;
-            }
-            
-            .article-grid {
-                grid-template-columns: 1fr;
-            }
+
+        .nav-link:hover {
+            color: #333;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            background: #f9f9f9;
+            border-top: 1px solid #eee;
+            font-family: STIXTwoText, serif;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Grouped selectors */
+        data-styled.g1[id="BaseWrap-sc-gjQpdd"] {
+            content: "iUEiRd,iwCByY,kFFOFc,dxqEAa,jfKMyp,"
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="site-title">ADILY FLAVOR</h1>
-        <p class="site-tagline">Culinary Inspiration & Premium Ingredients</p>
+        <div class="dxqEAa">
+            <h1>ADILY FLAVOR</h1>
+        </div>
+        <div class="nav-container">
+            <a href="#" class="nav-link">Recipes</a>
+            <a href="#" class="nav-link">Ingredients</a>
+            <a href="#" class="nav-link">Techniques</a>
+            <a href="#" class="nav-link">About</a>
+        </div>
     </header>
-    
-    <main class="main-content">
-        <section class="featured-section">
-            <h2 class="section-title">Featured Recipes</h2>
-            <div class="article-grid">
-                <article class="article-card">
-                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                    <div class="article-content">
-                        <h3 class="article-title">Seasonal Vegetable Medley</h3>
-                        <p class="article-excerpt">A vibrant mix of fresh vegetables with a light herb dressing that celebrates seasonal produce.</p>
-                        <p class="article-meta">Seasonal • Vegetarian</p>
-                    </div>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                    <div class="article-content">
-                        <h3 class="article-title">Artisan Bread Selection</h3>
-                        <p class="article-excerpt">Discover the art of bread making with our curated selection of premium grain recipes.</p>
-                        <p class="article-meta">Baking • Premium</p>
-                    </div>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                    <div class="article-content">
-                        <h3 class="article-title">Signature Dessert Collection</h3>
-                        <p class="article-excerpt">Indulge in our exclusive dessert recipes that balance sweetness with sophisticated flavors.</p>
-                        <p class="article-meta">Desserts • Signature</p>
-                    </div>
-                </article>
-            </div>
-        </section>
+
+    <main class="bjMGUM">
+        <h2 class="ZXQYA">Featured Recipe</h2>
         
-        <section class="featured-section">
-            <h2 class="section-title">Premium Ingredients</h2>
-            <div class="article-grid">
-                <article class="article-card">
-                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1426869884541-df7117556757?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                    <div class="article-content">
-                        <h3 class="article-title">Organic Spices</h3>
-                        <p class="article-excerpt">Source and use the finest organic spices to elevate your dishes with authentic flavors.</p>
-                        <p class="article-meta">Spices • Organic</p>
-                    </div>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                    <div class="article-content">
-                        <h3 class="article-title">Farm Fresh Produce</h3>
-                        <p class="article-excerpt">Learn how to select and prepare the freshest seasonal produce for optimal flavor.</p>
-                        <p class="article-meta">Produce • Seasonal</p>
-                    </div>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-                    <div class="article-content">
-                        <h3 class="article-title">Artisan Cheeses</h3>
-                        <p class="article-excerpt">Explore our guide to premium cheeses and how to incorporate them into your cooking.</p>
-                        <p class="article-meta">Cheese • Artisan</p>
-                    </div>
-                </article>
+        <!-- Caesar Salad Recipe -->
+        <div class="recipe-card">
+            <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Caesar Salad" class="recipe-image">
+            <h2 class="recipe-title">The Best Caesar Salad</h2>
+            <div class="recipe-meta">
+                <span>Prep: 20 mins</span>
+                <span>Total: 25 mins</span>
+                <span>Servings: 4</span>
             </div>
-        </section>
+            
+            <h3 class="recipe-section-title">Ingredients</h3>
+            <ul class="ingredient-list">
+                <li>1 clove garlic, halved</li>
+                <li>2 anchovy fillets</li>
+                <li>1 egg yolk</li>
+                <li>2 tbsp (30 ml) lemon juice</li>
+                <li>1 tsp (5 ml) Dijon mustard</li>
+                <li>1/2 cup (125 ml) olive oil</li>
+                <li>1/4 cup (60 ml) grated Parmesan cheese</li>
+                <li>1 head romaine lettuce, torn into pieces</li>
+                <li>1 cup (250 ml) croutons</li>
+                <li>Additional Parmesan shavings for garnish</li>
+            </ul>
+            
+            <h3 class="recipe-section-title">Instructions</h3>
+            <ol class="instruction-list">
+                <li>In a wooden salad bowl, rub the inside with the garlic halves.</li>
+                <li>Add anchovies and mash them into a paste with a fork.</li>
+                <li>Whisk in egg yolk, lemon juice, and mustard until smooth.</li>
+                <li>Gradually whisk in olive oil until dressing emulsifies.</li>
+                <li>Stir in grated Parmesan and season with pepper.</li>
+                <li>Add lettuce and toss gently to coat with dressing.</li>
+                <li>Add croutons and toss again.</li>
+                <li>Garnish with Parmesan shavings and serve immediately.</li>
+            </ol>
+            
+            <h3 class="recipe-section-title">Chef's Notes</h3>
+            <p>For a more intense flavor, let the dressing sit for 30 minutes before using. The egg yolk will cook slightly from the acid in the lemon juice, but for complete food safety, use pasteurized eggs.</p>
+        </div>
+        
+        <!-- Additional recipe cards can be added here -->
     </main>
-    
-    <footer>
+
+    <footer class="footer">
         <p>© 2023 ADILY FLAVOR. All rights reserved.</p>
-        <p>Premium culinary content for discerning home chefs.</p>
+        <p>Premium recipes for discerning home chefs.</p>
     </footer>
 </body>
 </html>
