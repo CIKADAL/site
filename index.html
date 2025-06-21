@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* All CSS styles from previous solution */
         :root {
             --amazon-orange: #FF9900;
             --amazon-dark-blue: #232F3E;
@@ -216,11 +215,18 @@
             font-size: 10px;
             padding: 3px 8px;
             border-radius: 20px;
+            z-index: 10;
         }
         
         .ad-content {
             text-align: center;
             padding: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
         
         .ad-content p {
@@ -746,6 +752,36 @@
                 gap: 15px;
             }
         }
+        
+        /* Sticky Mobile Ad */
+        .sticky-mobile-ad {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .sticky-mobile-ad {
+                display: block;
+            }
+        }
+        
+        .ad-fallback {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            color: #6c757d;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -792,12 +828,13 @@
         </div>
     </section>
 
-    <!-- Top Banner Ad -->
+    <!-- Top Banner Ad (970x250) -->
     <div class="container">
-        <div class="ad-container" style="height: 100px;">
+        <div class="ad-container" style="height: 250px;">
             <span class="ad-label">ADVERTISEMENT</span>
             <div class="ad-content">
-                <p>Top Banner Advertisement - 970x250</p>
+                <script async="async" data-cfasync="false" src="//pl26974695.profitableratecpm.com/daa6b9cb6f4408986b0b8175f29f778b/invoke.js"></script>
+                <div id="container-daa6b9cb6f4408986b0b8175f29f778b"></div>
             </div>
         </div>
     </div>
@@ -893,11 +930,12 @@
                 </div>
             </div>
             
-            <!-- In-content Ad -->
-            <div class="ad-container" style="height: 120px;">
+            <!-- In-content Ad (728x90) -->
+            <div class="ad-container" style="height: 90px;">
                 <span class="ad-label">ADVERTISEMENT</span>
                 <div class="ad-content">
-                    <p>In-content Advertisement - 728x90</p>
+                    <script async="async" data-cfasync="false" src="//pl26974695.profitableratecpm.com/daa6b9cb6f4408986b0b8175f29f778b/invoke.js"></script>
+                    <div id="container-daa6b9cb6f4408986b0b8175f29f778b"></div>
                 </div>
             </div>
             
@@ -974,23 +1012,25 @@
         </div>
     </section>
 
-    <!-- Bottom Banner Ad -->
+    <!-- Bottom Banner Ad (970x250) -->
     <div class="container">
-        <div class="ad-container" style="height: 100px;">
+        <div class="ad-container" style="height: 250px;">
             <span class="ad-label">ADVERTISEMENT</span>
             <div class="ad-content">
-                <p>Bottom Banner Advertisement - 970x250</p>
+                <script async="async" data-cfasync="false" src="//pl26974695.profitableratecpm.com/daa6b9cb6f4408986b0b8175f29f778b/invoke.js"></script>
+                <div id="container-daa6b9cb6f4408986b0b8175f29f778b"></div>
             </div>
         </div>
     </div>
 
-    <!-- Sticky Mobile Ad -->
+    <!-- Sticky Mobile Ad (320x50) -->
     <div class="sticky-mobile-ad">
         <div class="container">
-            <div class="ad-container" style="height: 70px;">
+            <div class="ad-container" style="height: 50px;">
                 <span class="ad-label">ADVERTISEMENT</span>
                 <div class="ad-content">
-                    <p>Sticky Mobile Ad - 320x50</p>
+                    <script async="async" data-cfasync="false" src="//pl26974695.profitableratecpm.com/daa6b9cb6f4408986b0b8175f29f778b/invoke.js"></script>
+                    <div id="container-daa6b9cb6f4408986b0b8175f29f778b"></div>
                 </div>
             </div>
         </div>
@@ -1172,6 +1212,16 @@
         adminBtn.addEventListener('click', () => {
             alert('Admin login modal would open here. This would allow access to recipe management.');
         });
+        
+        // Simulate ad loading with fallback
+        setTimeout(() => {
+            const adContainers = document.querySelectorAll('#container-daa6b9cb6f4408986b0b8175f29f778b');
+            adContainers.forEach(container => {
+                if (container.innerHTML.trim() === '') {
+                    container.innerHTML = '<div class="ad-fallback">Advertisement Placeholder</div>';
+                }
+            });
+        }, 2000);
     </script>
 
     <!-- Added the requested script -->
